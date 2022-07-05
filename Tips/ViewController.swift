@@ -118,6 +118,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         TipsamountField.text = "\(tipR)"
         label.text = "Total Bill: \((billDecimal + tipR))"
     }
+    
     func textFieldDidEndEditing(_ textField: UITextField) {
         var newTotal = Decimal()
         if let t = textField.text,
